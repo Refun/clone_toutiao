@@ -705,10 +705,35 @@ i.fa.fa-user{
     padding: 15px 10px 15px;
     font-size: 16px;
     line-height: 28px;
-    border-bottom: 3px solid #4c81fd;
+    border-bottom: 3px solid var(--main-color);
     background-color: #f1f1f1;
     margin-bottom: 10px;
 }
+  .card1 {
+            display: flex;
+            min-width: 100%;
+            min-height: 27px;
+            overflow-x: auto;
+            background: #e8e8e8;
+            margin-top: 38px;
+            padding: 3px 0px 0px;
+        }
+
+        .card1::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card--content {
+            min-width: 107px;
+            margin: 0px 0px 4px;
+            text-align: center;
+            border-radius: 5px;
+
+        }
+
+        .card--content a {
+            color: #444;
+        }
 @media (max-width: 768px){
     .slick-slide{
         padding: 0px;
