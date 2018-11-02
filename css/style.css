@@ -18,6 +18,7 @@ button {
 
 a {
     -webkit-appearance: none;
+    color: #444;
 }
 
 body {
@@ -32,7 +33,7 @@ a.navbar-brand.logo-font{
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
 
 :root {
-    --main-color: #ed4040 !important;
+    --main-color: #ed4040!important;
     --secondary-color: #208eda !important;
 }
 
@@ -95,6 +96,15 @@ a.nav-link:hover {
 
 }
 
+a.navbar-brand.logo-font{
+    color: #fff!important;
+}
+.navbar-toggler{
+    font-size: 14px;
+}
+.navbar-brand{
+    font-size: 16px;
+}
 /* .slick-slide:nth-child(1),
 .slick-slide:nth-child(3),
 .slick-slide:nth-child(5),
@@ -413,6 +423,9 @@ ul {
     list-style: none;
 }
 
+a {
+    color: #999;
+}
 a:visited {
     color: #999;
 }
@@ -645,6 +658,7 @@ a:hover {
 .left-style{
     padding: 1px 0px 0px 8px;
     margin:0px;
+    line-height: 18px;
 }
 
 .row-image {
@@ -656,12 +670,24 @@ a:hover {
   padding: 5px;
 }
 .bg-light {
-    background-color: #007bff!important;
+    background-color: var(--main-color)!important;
     padding: 2px 3px;
 }
-button.navbar-toggler.order-first{
-    border: none;
+ul.navbar-nav{
+    padding: 0px 12px;
+}
+.nav-link{
+    padding: 0px 0px;
+}
+a.nav-link{
     color: #fff;
+}
+button.navbar-toggler.order-first{
+    border: none!important;
+    color: #fff;
+}
+button:focus{
+    outline: none;
 }
 i.fa.fa-user{
     color: #fff;
