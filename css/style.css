@@ -1,9 +1,6 @@
-@font-face {
-    font-family: 'Yale';
-    src: url('../font/Yale_typeface/YaleNew-Bold.html') format("truetype"),
-        local('abc');
-}
 
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,700|Lato');
 textarea {
     -webkit-appearance: none;
 }
@@ -22,15 +19,13 @@ a {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    
     width: 100%;
     overflow-x: hidden!important;
-}
-a.navbar-brand.logo-font{
-    font-weight: 700;
+    font-family: 'Lato';
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+
 
 :root {
     --main-color: #ed4040!important;
@@ -44,6 +39,11 @@ a.navbar-brand.logo-font{
     --text-color-white: #FFFFFF;
     --text-color-brown: #b8977e;
     --font-size: 12px;
+}
+a.navbar-brand.logo-font{
+    font-weight: 700;
+    font-family: 'EB Garamond', serif!important;
+
 }
 
 .f-12{
@@ -423,10 +423,10 @@ ul {
     list-style: none;
 }
 
-a {
-    color: #999;
+.side_news a {
+    color: #444!important;
 }
-a:visited {
+.side_news a:visited {
     color: #999;
 }
 
@@ -675,6 +675,9 @@ a:hover {
 }
 ul.navbar-nav{
     padding: 0px 12px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
 }
 .nav-link{
     padding: 0px 0px;
